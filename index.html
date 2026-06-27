@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sujal Verma | Full-Stack & AI Engineer Portfolio</title>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark"> 
+  <canvas id="matrixCanvas"></canvas>
+
+  <!-- Preloader Screen -->
+  <!-- <div id="preloader">
+    <div class="preloader-content">
+      <div class="brand-logo">&lt;Sujal<span class="highlight">.dev</span>&gt;</div>
+      <div class="loading-line"></div>
+      <div class="status-text">Compiling assets...</div>
+    </div>
+  </div> -->
+
+
+
+<!-- Futuristic Hacker Terminal Preloader Screen -->
+  <div id="preloader">
+    <div class="hacker-terminal-wrapper">
+      <div class="terminal-header-top">
+        <span class="terminal-dot r"></span>
+        <span class="terminal-dot y"></span>
+        <span class="terminal-dot g"></span>
+        <span class="terminal-title-text">root@sujal.dev: ~//system_init</span>
+      </div>
+      <div class="terminal-logs-body" id="terminalLogs">
+        <p class="log-line text-green">&gt;&gt; STARTING SUJAL.DEV KERNEL CORE v4.5...</p>
+        <!-- Dynamic logs JavaScript automatically yahan inject karega -->
+      </div>
+      <div class="terminal-progress-area">
+        <div class="terminal-progress-bar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <div class="progress-percentage" id="progressPercent">0%</div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <span class="logo-icon">&lt;/&gt;</span>
+        <span class="logo-text">Sujal<span class="highlight">.dev</span></span>
+      </a>
+
+      <div class="menu-btn" id="menu-btn">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#certifications" class="nav-link">Certificates</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li>
+          <button id="theme-btn" class="theme-btn" aria-label="Toggle Theme">
+            <svg class="icon sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg class="icon moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-container">
+      <div class="hero-text">
+        <div class="badge-status">⚡ Available for SDE Roles & Internships</div>
+        <h1>Architecting <span class="gradient-text">Full-Stack Platforms</span> & Intelligent AI Ecosystems</h1>
+        <p class="hero-sub">Engineering production-ready, highly optimized applications using the MERN stack, Next.js, and advanced cloud technologies.</p>
+    
+        <!-- Unified Corrected 3-Button System Mapping -->
+        <div class="hero-btns">
+            <a href="#projects" class="btn primary">View Projects</a>
+            <a href="assets/Sujal_Resume_Revised_3.pdf" download="Sujal_Resume_Verma" class="btn outline">Download Resume</a>
+            <a href="#contact" class="btn outline">Contact Me</a>
+        </div>
+        
+        <div class="hero-stats">
+          <div class="stat-item"><b>MERN</b> <span>Core Stack</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat-item"><b>AI/ML</b> <span>Integration</span></div>
+        </div>
+      </div>
+
+      <!-- 3D Profile Frame Layout -->
+      <div class="hero-visual tilt">
+        <div class="glow-blob"></div>
+        <div class="glass-card-3d">
+          <img src="assets/Profile Photo/profile.jpeg" alt="Sujal Verma" class="profile-avatar" />
+          <div class="floating-tag top-left"><span>💻</span> Full Stack</div>
+          <div class="floating-tag bottom-right"><span>🤖</span> AI Engineer</div>
+        </div>
+        
+        <!-- Fully Extended Orbit Tech System (Java, React, Node, Python) -->
+        <div class="orbit-nodes">
+          <div class="node node-node"><i class="fa-brands fa-node-js" style="color:#339933;"></i></div>
+          <div class="node node-react"><i class="fa-brands fa-react" style="color:#61dafb;"></i></div>
+          <div class="node node-database"><i class="fa-brands fa-java" style="color:#f89820;"></i></div>
+          <div class="node node-python"><i class="fa-brands fa-python" style="color:#3776ab;"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Metrics Summary Array -->
+  <section class="metrics-strip">
+    <div class="metrics-grid container">
+      <div class="metric-card"><h3>Robust</h3><p>Architecture Focus</p></div>
+      <div class="metric-card"><h3>Asynchronous</h3><p>High Throughput APIs</p></div>
+      <div class="metric-card"><h3>Scalable</h3><p>Database Optimization</p></div>
+    </div>
+  </section>
+
+  <!-- About Framework -->
+  <section class="about-section reveal" id="about">
+    <div class="container grid-2">
+      <div class="about-info">
+        <h2 class="section-title text-left">About Me</h2>
+        <p class="paragraph">I am an aspiring Software Engineer specialized in designing backend pipelines, interactive UI environments, and predictive analytics infrastructures. My development philosophy focuses on building clean, testable, and strictly documented codebases optimized for production deployments.</p>
+        <p class="paragraph">With foundational experience in asynchronous Python paradigms, RESTful engineering, and state management, I transform architectural requirements into responsive technical layers.</p>
+      </div>
+      <div class="about-terminal-box">
+        <div class="terminal-mock">
+          <div class="terminal-header-bar">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          </div>
+          <div class="terminal-body-content">
+            <p class="line-command"><span class="usr">root@sujal:~#</span> cat developer.json</p>
+            <pre class="json-output">
+{
+  "name": "Sujal Verma",
+  "status": "Engineering Student",
+  "focus": ["Full Stack Development", "MERN Stack"],
+  "location": "Mumbai, India"
+}</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Infinite Scroll Marquee Engine (Strict Content Width Bound) -->
+  <section class="skills-marquee" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills & Toolkit</h2>
+      <p class="section-sub">Production-ready stacks, computational tools, and architectural frameworks.</p>
+      
+      <!-- Track 1: Languages & Core Stacks -->
+      <p class="marquee-label" style="text-align: center;">Languages & Core Stacks</p>
+      <div class="marquee-shell">
+        <div class="marquee-track">
+          <div class="marquee-group">
+            <div class="skill-item"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+            <div class="skill-item"><i class="devicon-react-original colored"></i><span>React.js</span></div>
+            <div class="skill-item"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+            <div class="skill-item"><i class="devicon-html5-plain colored"></i><span>HTML5 & CSS3</span></div>
+            <div class="skill-item"><i class="devicon-java-plain colored"></i><span>Java</span></div>
+            <div class="skill-item"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+          </div>
+          <div class="marquee-group" aria-hidden="true">
+            <div class="skill-item"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+            <div class="skill-item"><i class="devicon-react-original colored"></i><span>React.js</span></div>
+            <div class="skill-item"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+            <div class="skill-item"><i class="devicon-html5-plain colored"></i><span>HTML5 & CSS3</span></div>
+            <div class="skill-item"><i class="devicon-java-plain colored"></i><span>Java</span></div>
+            <div class="skill-item"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Track 2: AI, Datastores & Extensions -->
+      <p class="marquee-label" style="text-align: center;">AI, Datastores & Extensions</p>
+      <div class="marquee-shell">
+        <div class="marquee-track reverse">
+          <div class="marquee-group">
+            <div class="skill-item"><i class="fa-solid fa-brain" style="color:#a855f7;"></i><span>Generative AI</span></div>
+            <div class="skill-item"><i class="fa-solid fa-bolt" style="color:#00fa9a;"></i><span>Socket.io</span></div>
+            <div class="skill-item"><i class="devicon-mongodb-plain colored"></i><span>MongoDB</span></div>
+            <div class="skill-item"><i class="devicon-mysql-plain colored"></i><span>SQL (MySQL)</span></div>
+            <div class="skill-item"><i class="fa-solid fa-chart-line" style="color:#ec4899;"></i><span>Mathematical Analytics</span></div>
+            <div class="skill-item"><i class="fa-solid fa-network-wired" style="color:#3b82f6;"></i><span>RESTful APIs</span></div>
+          </div>
+          <div class="marquee-group" aria-hidden="true">
+            <div class="skill-item"><i class="fa-solid fa-brain" style="color:#a855f7;"></i><span>Generative AI</span></div>
+            <div class="skill-item"><i class="fa-solid fa-bolt" style="color:#00fa9a;"></i><span>Socket.io</span></div>
+            <div class="skill-item"><i class="devicon-mongodb-plain colored"></i><span>MongoDB</span></div>
+            <div class="skill-item"><i class="devicon-mysql-plain colored"></i><span>SQL (MySQL)</span></div>
+            <div class="skill-item"><i class="fa-solid fa-chart-line" style="color:#ec4899;"></i><span>Mathematical Analytics</span></div>
+            <div class="skill-item"><i class="fa-solid fa-network-wired" style="color:#3b82f6;"></i><span>RESTful APIs</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Track 3: Frameworks, Tools & Security -->
+      <p class="marquee-label" style="text-align: center;">Frameworks, Tools & Security</p>
+      <div class="marquee-shell">
+        <div class="marquee-track">
+          <div class="marquee-group">
+            <!-- <div class="skill-item"><i class="devicon-postman-plain colored"></i><span>Postman API</span></div> -->
+             <div class="skill-item">
+                <i class="fa-solid fa-layer-group" style="color: #FF6C37;"></i>
+                <span>Postman API</span>
+            </div>
+            <div class="skill-item"><i class="fa-solid fa-shield-halved" style="color:#ef4444;"></i><span>Network Security</span></div>
+            <div class="skill-item"><i class="fa-solid fa-gears" style="color:#64748b;"></i><span>n8n Automation</span></div>
+            <div class="skill-item"><i class="devicon-java-plain colored"></i><span>DSA (Java)</span></div>
+            <div class="skill-item"><i class="devicon-git-plain colored"></i><span>Git & GitHub</span></div>
+            <div class="skill-item"><i class="devicon-linux-plain colored"></i><span>Linux OS</span></div>
+          </div>
+          <div class="marquee-group" aria-hidden="true">
+            <!-- <div class="skill-item"><i class="devicon-postman-plain colored"></i><span>Postman API</span></div> -->
+             <div class="skill-item">
+                <i class="fa-solid fa-layer-group" style="color: #FF6C37;"></i>
+                <span>Postman API</span>
+            </div>
+            <div class="skill-item"><i class="fa-solid fa-shield-halved" style="color:#ef4444;"></i><span>Network Security</span></div>
+            <div class="skill-item"><i class="fa-solid fa-gears" style="color:#64748b;"></i><span>n8n Automation</span></div>
+            <div class="skill-item"><i class="devicon-java-plain colored"></i><span>DSA (Java)</span></div>
+            <div class="skill-item"><i class="devicon-git-plain colored"></i><span>Git & GitHub</span></div>
+            <div class="skill-item"><i class="devicon-linux-plain colored"></i><span>Linux OS</span></div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- End of .container -->
+  </section>
+
+  <!-- Projects Array -->
+  <section class="projects-section reveal" id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-sub">Real-world deployments built for high scalability, performance, and efficiency.</p>
+
+      <!-- 4 Filter Controls Array -->
+      <div class="filter-controls">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ai-python">AI & Python</button>
+        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+        <button class="filter-btn" data-filter="mern">MERN Stack</button>
+      </div>
+
+      <!-- Projects Grid Container -->
+      <div class="projects-display-grid">
+        
+        <!-- Project 1: GuardianRoute -->
+        <div class="project-card-row" data-category="mern">
+          <div class="project-visual-side">
+            <img src="assets/prj-img-src/GuardianRoute.png" alt="GuardianRoute Analytics System" class="project-ai-img" />
+          </div>
+          <div class="project-narrative-side">
+            <span class="project-status-badge">In Production</span>
+            <h3>GuardianRoute - Intelligent Transport System</h3>
+            <p class="project-text">Hardware-free, real-time tracking system developed for Mira-Bhayandar schools. Utilizes Socket.io for zero-latency live coordinate updates between transport drivers and administrators alongside an automated notification architecture.</p>
+            
+            <div class="project-tech-tags">
+              <span>Node.js</span><span>Express.js</span><span>Socket.io</span><span>Leaflet.js</span><span>MongoDB</span>
+            </div>
+            
+            <div class="project-action-links">
+              <a href="https://github.com/Raccoon-UX/GuardianRoute-Transport-System-O" target="_blank" class="proj-btn github"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="https://raccoon-ux.github.io/GuardianRoute-Transport-System-O/" target="_blank" class="proj-btn live"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Verity AI -->
+        <div class="project-card-row reverse" data-category="ai-python">
+          <div class="project-visual-side">
+            <img src="assets/prj-img-src/verity-ai.png" alt="Verity AI Audit Model" class="project-ai-img" />
+          </div>
+          <div class="project-narrative-side">
+            <span class="project-status-badge">Completed</span>
+            <h3>Verity AI - AI Auditing & Hallucination Detection</h3>
+            <p class="project-text">An independent auditing ecosystem built during the GDG Cloud Mumbai Hackathon that scans Generative AI tokens in real-time to detect factual inconsistencies using a custom evaluation engine. Features a proprietary "Gen Score" (0-100) metric matrix.</p>
+            
+            <div class="project-tech-tags">
+              <span>Python</span><span>Node.js</span><span>MongoDB Atlas</span><span>Google Cloud API</span><span>JWT</span>
+            </div>
+            
+            <div class="project-action-links">
+              <a href="https://github.com/Raccoon-UX/Verity-AI-GDG-Hackathon" target="_blank" class="proj-btn github"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="https://aryanubale7.github.io/verity-frontend/" target="_blank" class="proj-btn live"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Student Task Manager -->
+        <div class="project-card-row" data-category="mern">
+          <div class="project-visual-side">
+            <img src="assets/prj-img-src/task.png" alt="Task Manager Workspace" class="project-ai-img" />
+          </div>
+          <div class="project-narrative-side">
+            <span class="project-status-badge">Completed</span>
+            <h3>Student Task Manager - Productivity Dashboard</h3>
+            <p class="project-text">Full-stack academic scheduling environment engineered to streamline objective-tracking via gamified execution states. Integrates Google Gemini AI workflows to auto-compile actionable sub-tasks with real-time visual analytics using Recharts.</p>
+            
+            <div class="project-tech-tags">
+              <span>React (Vite)</span><span>MongoDB Atlas</span><span>Google Gemini AI</span><span>Recharts</span><span>Axios</span>
+            </div>
+            
+            <div class="project-action-links">
+              <a href="https://github.com/Raccoon-UX/Student-Task-Manager-Prj-EngNow" target="_blank" class="proj-btn github"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="https://student-task-manager-prj-eng-now.vercel.app/login" target="_blank" class="proj-btn live"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Eco-Detect -->
+        <div class="project-card-row reverse" data-category="fullstack">
+          <div class="project-visual-side">
+            <img src="assets/prj-img-src/ecoDetect.png" alt="Eco-Detect Neural Analysis" class="project-ai-img" />
+          </div>
+          <div class="project-narrative-side">
+            <span class="project-status-badge">Completed</span>
+            <h3>Eco-Detect - Smart Plant Disease Detection</h3>
+            <p class="project-text">A full-stack artificial intelligence web application engineered to instantly process and isolate agricultural plant anomalies using computer vision. Leverages image processing pipelines for instant healthy vs diseased classification.</p>
+            
+            <div class="project-tech-tags">
+              <span>React</span><span>TypeScript</span><span>Tailwind CSS</span><span>OpenAI Vision API</span>
+            </div>
+            
+            <div class="project-action-links">
+              <a href="https://github.com/Raccoon-UX/EcoDetect" target="_blank" class="proj-btn github"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="https://eco-detect-plant-disease.netlify.app/" target="_blank" class="proj-btn live"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Career Milestones Section -->
+  <section class="experience-section reveal" id="experience">
+    <div class="container">
+      <h2 class="section-title">Career Milestones</h2>
+      <p class="section-sub">Verified experience, internship achievements, and technical roles.</p>
+      
+      <div class="experience-grid">
+        
+        <!-- Milestone 1: CodTech IT Solutions -->
+        <div class="milestone-card">
+          <div class="card-top">
+            <div class="icon-box"><i class="fa-solid fa-code"></i></div>
+            <div>
+              <h3>CodTech IT Solutions</h3>
+              <span class="location">Full-Stack & Web Intern</span>
+            </div>
+          </div>
+          <div class="card-body-preview view-trigger">
+            <img src="assets/Internships- Work Experience/Certified CodTech Intern-1_page-0001.jpg" alt="CodTech Experience Certificate" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+            <div class="zoom-overlay"><span>🔍 Review Artifact</span></div>
+          </div>
+          <div class="card-footer-info">
+            <span class="timeline">Dec 2025 - Jan 2026</span>
+            <a href="https://codtechlearning.com/api/certificates/verify-standalone/A0550C87E4CC8542" target="_blank" class="badge credential-link">Credentials</a>
+            <span class="badge completed">Completed</span>
+          </div>
+        </div>
+
+        <!-- Milestone 2: Cyber Security Intern (Inhouse) -->
+        <div class="milestone-card">
+          <div class="card-top">
+            <div class="icon-box"><i class="fa-solid fa-shield-halved"></i></div>
+            <div>
+              <h3>SLRTCE, Mumbai</h3>
+              <span class="location">Cyber Security Intern</span>
+            </div>
+          </div>
+          <div class="card-body-preview view-trigger">
+            <img src="assets/Internships- Work Experience/Computer Engineering Certificate_page-0001.jpg" alt="Cyber Security Intern Certificate" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+            <div class="zoom-overlay"><span>🔍 Review Artifact</span></div>
+          </div>
+          <div class="card-footer-info">
+            <span class="timeline">June 2025 - July 2025</span>
+            <span class="badge completed">Verified</span>
+          </div>
+        </div>
+
+        <!-- Milestone 3: GDG Cloud Mumbai Hackathon -->
+        <div class="milestone-card">
+          <div class="card-top">
+            <div class="icon-box"><i class="fa-solid fa-trophy"></i></div>
+            <div>
+              <h3>GDG Cloud Mumbai</h3>
+              <span class="location">Hackathon Submitter (Verity AI)</span>
+            </div>
+          </div>
+          <div class="card-body-preview view-trigger">
+            <img src="assets/Achievements/GDG NMIMS.png" alt="GDG Hackathon Certificate" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+            <div class="zoom-overlay"><span>🔍 Review Artifact</span></div>
+          </div>
+          <div class="card-footer-info">
+            <span class="timeline">Jan 2026</span> 
+            <span class="badge completed">Shortlisted</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Slider Section -->
+  <section class="certifications-slider reveal" id="certifications">
+    <div class="container">
+      <h2 class="section-title">Certifications & Achievements</h2>
+      <p class="section-sub">Technical training assessments, course completions, and hackathon milestones.</p>
+      
+      <div class="swiper certifications-swiper-container">
+        <div class="swiper-wrapper">
+          
+          <!-- Slide 1: Build with AI Bootcamp -->
+          <div class="swiper-slide">
+            <div class="carousel-card-wide tilt">
+              <div class="carousel-visual-frame view-trigger">
+                <img src="assets/Achievements/Build With AI Bootcamp.jpg" alt="Build with AI Bootcamp" onerror="this.style.display='none';" />
+                <div class="doc-avatar-box"><i class="fa-solid fa-laptop-code" style="color: #4285F4;"></i></div>
+                <div class="carousel-hover-overlay"><span class="badge-cta">Expand Artifact</span></div>
+              </div>
+              <div class="carousel-meta-content">
+                <h3>Build with AI Bootcamp - Antigravity</h3>
+                <p class="credential-issuer">Google for Developers | H2S</p>
+                <p class="credential-date">April — 2026</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2: H.E.A.T 1.0 Hackathon -->
+          <div class="swiper-slide">
+            <div class="carousel-card-wide tilt">
+              <div class="carousel-visual-frame view-trigger">
+                <img src="assets/Achievements/H.E.A.T.png" alt="H.E.A.T 1.0 Hackathon" onerror="this.style.display='none';" />
+                <div class="doc-avatar-box"><i class="fa-solid fa-fire" style="color: #ff4500;"></i></div>
+                <div class="carousel-hover-overlay"><span class="badge-cta">Expand Artifact</span></div>
+              </div>
+              <div class="carousel-meta-content">
+                <h3>H.E.A.T 1.0: Ignite Innovation 24-Hr Hackathon</h3>
+                <p class="credential-issuer">Atlas SkillTech University</p>
+                <p class="credential-date">March — 2026</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3: Build & Grow AI Hackathon 2.0 -->
+          <div class="swiper-slide">
+            <div class="carousel-card-wide tilt">
+              <div class="carousel-visual-frame view-trigger">
+                <img src="assets/Achievements/GDG NMIMS.png" alt="Build & Grow AI Hackathon" onerror="this.style.display='none';" />
+                <div class="doc-avatar-box"><i class="fa-solid fa-trophy" style="color: #f1c40f;"></i></div>
+                <div class="carousel-hover-overlay"><span class="badge-cta">Expand Artifact</span></div>
+              </div>
+              <div class="carousel-meta-content">
+                <h3>Shortlisted: Build & Grow AI Hackathon 2.0</h3>
+                <p class="credential-issuer">NMIMS, GDG Cloud Mumbai</p>
+                <p class="credential-date">Jan — 2026</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4: SuperHack 2025 -->
+          <div class="swiper-slide">
+            <div class="carousel-card-wide tilt">
+              <div class="carousel-visual-frame view-trigger">
+                <img src="assets/Achievements/AWS.png" alt="SuperHack 2025" onerror="this.style.display='none';" />
+                <div class="doc-avatar-box"><i class="fa-solid fa-bolt" style="color: #ffaa00;"></i></div>
+                <div class="carousel-hover-overlay"><span class="badge-cta">Expand Artifact</span></div>
+              </div>
+              <div class="carousel-meta-content">
+                <h3>SuperHack 2025 (Global AI Hackathon)</h3>
+                <p class="credential-issuer">SuperOps × AWS & Hack2skill</p>
+                <p class="credential-date">Jan — 2026</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 5: Walmart Global Tech -->
+          <div class="swiper-slide">
+            <div class="carousel-card-wide tilt">
+              <div class="carousel-visual-frame view-trigger">
+                <img src="assets/Achievements/Walmart Global Tech_page-0001.jpg" alt="Walmart Job Simulation" onerror="this.style.display='none';" />
+                <div class="doc-avatar-box"><i class="fa-solid fa-building-columns" style="color: #007dc6;"></i></div>
+                <div class="carousel-hover-overlay"><span class="badge-cta">Expand Artifact</span></div>
+              </div>
+              <div class="carousel-meta-content">
+                <h3>Advanced Software Engineering Job Simulation</h3>
+                <p class="credential-issuer">Walmart Global Tech (Forage)</p>
+                <p class="credential-date">Jan — 2026</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 6: Hacksagon 2026 -->
+          <div class="swiper-slide">
+            <div class="carousel-card-wide tilt">
+              <div class="carousel-visual-frame view-trigger">
+                <img src="assets/Achievements/HACKSAGON_page-0001.jpg" alt="Hacksagon 2026 Certificate" onerror="this.style.display='none';" />
+                <div class="doc-avatar-box"><i class="fa-solid fa-lightbulb" style="color: #3b82f6;"></i></div>
+                <div class="carousel-hover-overlay"><span class="badge-cta">Expand Artifact</span></div>
+              </div>
+              <div class="carousel-meta-content">
+                <h3>Hacksagon 2026 - Ideation Phase</h3>
+                <p class="credential-issuer">ABV-IIITM IEEE Student Branch</p>
+                <p class="credential-date">2026</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 7: ITSA Committee -->
+          <div class="swiper-slide">
+            <div class="carousel-card-wide tilt">
+              <div class="carousel-visual-frame view-trigger">
+                <img src="assets/Achievements/ITSA AI Experience_page-0001.jpg" alt="AI Experience Seminar Certificate" onerror="this.style.display='none';" />
+                <div class="doc-avatar-box"><i class="fa-solid fa-robot" style="color: #f59e0b;"></i></div>
+                <div class="carousel-hover-overlay"><span class="badge-cta">Expand Artifact</span></div>
+              </div>
+              <div class="carousel-meta-content">
+                <h3>AI Experience Seminar</h3>
+                <p class="credential-issuer">ITSA Committee, SLRTCE</p>
+                <p class="credential-date">2026</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 8: TechBlitz 2026 -->
+          <div class="swiper-slide">
+            <div class="carousel-card-wide tilt">
+              <div class="carousel-visual-frame view-trigger">
+                <img src="assets/Achievements/Sujal-Verma.png" alt="TechBlitz 2026 Certificate" onerror="this.style.display='none';" />
+                <div class="doc-avatar-box"><i class="fa-solid fa-shield-halved" style="color: #ef4444;"></i></div>
+                <div class="carousel-hover-overlay"><span class="badge-cta">Expand Artifact</span></div>
+              </div>
+              <div class="carousel-meta-content">
+                <h3>TechBlitz 2026 - Trident AI</h3>
+                <p class="credential-issuer">Vidyavardhini's College of Engineering and Technology</p>
+                <p class="credential-date">2026</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- Swiper Controls -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Portal Section -->
+  <section class="contact-section reveal" id="contact">
+    <div class="container">
+      
+      <!-- Top Standard Centered Heading Layout -->
+      <h2 class="section-title">Contact Us</h2>
+      <p class="section-sub">Let's build high-throughput solutions or discuss engineering opportunities.</p>
+      
+      <div class="contact-container-grid">
+        
+        <!-- Left Side Visual Banner Frame -->
+        <div class="contact-visual-frame">
+          <img src="assets/contact.png" alt="Sujal Verma | Workspace Context" class="contact-side-img" />
+        </div>
+
+        <!-- Right Side Minimalist Layout Shell -->
+        <div class="contact-content-side">
+          <div class="contact-split-body">
+            
+            <!-- Form Component (Formspree Integrated Endpoint) -->
+            <form class="async-contact-form" id="contactForm" action="https://formspree.io/f/mgojyoww" method="POST">
+              <div class="input-component">
+                <input type="text" id="form-name" name="name" required placeholder="Full Name" />
+              </div>
+              <div class="input-component">
+                <input type="email" id="form-email" name="email" required placeholder="E-mail" />
+              </div>
+              <div class="input-component">
+                <textarea id="form-message" name="message" rows="3" required placeholder="Message"></textarea>
+              </div>
+              <button type="submit" class="execute-btn">Contact Us</button>
+              <div class="execution-status" id="formStatus"></div>
+            </form>
+
+            <!-- Right Corner Information Coordinates -->
+            <div class="contact-meta-coordinates">
+              <div class="meta-coordinate-item">
+                <h4>Contact</h4>
+                <p class="primary-detail">vsujal956@gmail.com</p>
+              </div>
+              <div class="meta-coordinate-item">
+                <h4>Based in</h4>
+                <p>Mumbai, Maharashtra,<br>India</p>
+              </div>
+              
+              <!-- Authentic Original Brand Icon Link Grid -->
+              <div class="contact-inline-socials">
+                <a href="https://www.linkedin.com/in/sujalverma456/" target="_blank" aria-label="LinkedIn" class="social-icon linkedin-brand">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/Raccoon-UX" target="_blank" aria-label="GitHub" class="social-icon github-brand">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="mailto:vsujal956@gmail.com" aria-label="Gmail" class="social-icon gmail-brand">
+                  <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://wa.me/917710893839" target="_blank" aria-label="WhatsApp" class="social-icon whatsapp-brand">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Premium Unified Structural Footer Component -->
+  <footer class="footer-component">
+    <div class="footer-grid container">
+      
+      <!-- Column 1: Main Brand Architecture -->
+      <div class="footer-block main-identity">
+        <h2 class="footer-brand">Sujal<span class="highlight">.dev</span></h2>
+        <p class="footer-bio-text">Designing performant server states, predictable state machines, and reliable asynchronous full-stack applications.</p>
+        
+        <!-- Core Architecture Stack Badges -->
+        <div class="footer-stack-badges">
+          <span>MERN Stack</span>
+          <span>Next.js</span>
+          <span>FastAPI</span>
+          <span>AI/ML</span>
+        </div>
+      </div>
+
+      <!-- Column 2: Structural Sitemap Nodes -->
+      <div class="footer-block access-points">
+        <h3>Navigation Nodes</h3>
+        <ul class="footer-nav-matrix">
+          <li><a href="#home"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+          <li><a href="#about"><i class="fa-solid fa-chevron-right"></i> About</a></li>
+          <li><a href="#projects"><i class="fa-solid fa-chevron-right"></i> Projects</a></li>
+          <li><a href="#experience"><i class="fa-solid fa-chevron-right"></i> Experience</a></li>
+          <li><a href="#certifications"><i class="fa-solid fa-chevron-right"></i> Certificates</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Communication & Verification Channels -->
+      <div class="footer-block communication-coordinates">
+        <h3>Direct Channels</h3>
+        <div class="footer-coordinate-links">
+          <a href="mailto:vsujal956@gmail.com" class="coordinate-item">
+            <i class="fa-solid fa-envelope"></i> vsujal956@gmail.com
+          </a>
+          <a href="https://wa.me/917710893839" target="_blank" class="coordinate-item">
+            <i class="fa-brands fa-whatsapp"></i> +91 7710893839
+          </a>
+          <span class="coordinate-item-static">
+            <i class="fa-solid fa-location-dot"></i> Mumbai, Maharashtra, India
+          </span>
+        </div>
+
+        <!-- Refined Floating Social Handles Grid -->
+        <div class="footer-brand-channels">
+          <a href="https://www.linkedin.com/in/sujalverma456/" target="_blank" aria-label="LinkedIn" class="footer-icon-btn linkedin-f"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/Raccoon-UX" target="_blank" aria-label="GitHub" class="footer-icon-btn github-f"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.instagram.com/itz_sujal_86011/" target="_blank" aria-label="Instagram" class="footer-icon-btn instagram-f"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Separator Line Rule -->
+    <div class="footer-separator container"></div>
+    
+    <!-- Meta Bottom Layout Sheet -->
+    <div class="footer-meta-bottom container">
+      <div class="system-status-wrapper">
+        <span class="pulse-dot"></span>
+        <span class="status-label">System Status: Fully Operational</span>
+      </div>
+      <span class="copyright-text">&copy; 2026 Sujal Verma &middot; All Rights Reserved</span>
+      
+      <!-- Dynamic Loop Back to Top Mechanism -->
+      <a href="#home" class="scroll-top-trigger" aria-label="Scroll Back To Top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Lightbox Engine -->
+  <div id="lightboxModal" class="lightbox-engine-overlay">
+    <span class="dismiss-btn">&times;</span>
+    <div class="lightbox-wrapper">
+      <div class="fallback-modal-icon"><i class="fa-solid fa-file-lines"></i></div>
+      <img class="lightbox-image-target" id="modalImageContainer" alt="Asset View" />
+    </div>
+    <div id="lightboxCaption"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
